@@ -6,316 +6,553 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Suerte Café</title>
     <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Mingzat&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Merienda:wght@300..900&family=Mingzat&display=swap"
+        rel="stylesheet">
 </head>
 
-<body class=" bg-teal-100">
-    <!-- NAVBAR horizontal The Bar steak or horizontal bar/menu --->
-
-    <div class="fixed z-10 w-full flex items-center">
-        <div class="bg-gradient-to-b from-orange-300 to-teal-100 w-full flex items-center">
-
-            <div class="w-1/3 flex m-3 ml-16">
-                <a href=""><img src="imagenes/logoSuerteCafe.png" alt="" class="w-32"></a>
+<body class="overflow-x-hidden">
+    <!-- NAVBAR horizontal -->
+    <nav class="fixed flex w-full bg-gradient-to-b from-[#095430] to-[#f8f4f1] shadow-sm z-50 border border-[red]">
+        <div
+            class="lg:w-full w-full sm:w-2 flex items-center justify-between py-3 px-4 sm:px-6 lg:px-16 border border-[black]">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <a href="#">
+                    <img src="imagenes/logoSuerteCafe.png" alt="Logo La Suerte Café"
+                        class="w-12 h-auto max-w-full lg:w-32 object-contain lg:ml-32 border border-[blue]">
+                </a>
             </div>
 
+            <!-- Título del Menú -->
+            <div class="text-center">
+                <a href="#bebidasCalientes"
+                    class="text-[#095430] ml-12 lg:ml-32 font-bold text-3xl lg:text-7xl transform hover:scale-105 border border-[blue]">
+
+                    MENÚ
+                </a>
+            </div>
+
+            <!-- Redes Sociales -->
             <div
-                class="w-1/3 justify-center items-center space-x-8 hidden sm:flex pr-16 font-serif text-white text-2xl">
-                <a href="#bebidasCalientes" class="transform hover:scale-110 text-custom-brown">MENÚ</a>
-            </div>
-
-            <div class="w-1/3 flex justify-center items-center space-x-4 sm:space-x-8">
-                <a href="https://api.whatsapp.com/send?phone=5215528385979">
-                    <img src="imagenes/whatsApp.png" alt="" class="w-16 m-4 transform hover:scale-110">
+                class="lg:h-20 h-10 w-1/4 lg:mr-24 lg:w-1/5 flex items-center space-x-2 sm:space-x-4 border border-[#91ff00]">
+                <a href="https://api.whatsapp.com/send?phone=5215528385979" target="_blank">
+                    <img src="imagenes/whatsApp.png" alt="WhatsApp"
+                        class="lg:w-14 w-16 object-contain transform hover:scale-110">
                 </a>
                 <a href="https://www.facebook.com/LaSuerteCafe" target="_blank">
-                    <img src="imagenes/facebook-.png" alt="" class="w-14 m-4 transform hover:scale-110">
+                    <img src="imagenes/facebook-.png" alt="Facebook"
+                        class="lg:w-12 w-16 object-contain transform hover:scale-110">
                 </a>
                 <a href="https://www.instagram.com/la_suerte_cafe/" target="_blank">
-                    <img src="imagenes/instagram.png" alt="" class="w-14 m-4 transform hover:scale-110">
+                    <img src="imagenes/instagram.png" alt="Instagram"
+                        class="lg:w-11 w-16 object-contain transform hover:scale-110">
                 </a>
                 <a href="https://www.tiktok.com/@la_suerte_cafe" target="_blank">
-                    <img src="imagenes/tiktok.png" alt="" class="w-14 m-4 transform hover:scale-110">
+                    <img src="imagenes/tiktok.png" alt="TikTok"
+                        class="lg:w-11 w-14 object-contain transform hover:scale-110">
                 </a>
             </div>
         </div>
-    </div>
+    </nav>
 
     <!-- MENU DE DESAYUNOS -->
-    <section class="border 20px solid border-black py-40">
-        <h1>DESAYUNOS</h1>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <span class="item-name">HUEVOS AL GUSTO</span>
-                <span class="item-price">$250</span>
-                <p>(A la Mexicana, Jamón, Tocino)</p>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">CHILAQUILES SENCILLOS</span>
-                <span class="item-price">$220</span>
-                <p>(Rojos o verdes, Pollo deshebrado)</p>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">WAFFLES</span>
-                <span class="item-price">$180</span>
-                <p>(Acompañado de frutas o miel)</p>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">BAGUETTE</span>
-                <span class="item-price">$200</span>
-                <p>(Jamón con queso, pollo, estilo mexicana)</p>
-            </div>
-        </div>
-    </section>
+    <main class="lg:pt-40 pt-20 border border-[yellow] lg:m-0 m-1">
+        <!-- SECCIÓN DE DESAYUNOS -->
+        <section id="desayunos" class="container mx-auto ">
+            <h1
+                class="lg:text-8xl text-3xl font-tittle pl-10 text-center text-[#095430] border-[#095430] border-t-4 pt-3">
+                DESAYUNOS</h1>
+            <p class="font-text text-gray-700 mb-1 text-center lg:pl-10 text-sm lg:text-base">(Todos los desayunos
+                incluyen:
+                Café o té,
+                jugo o fruta, avena con yogurt y pan dulce)
+            </p>
+            <p class="font-text text-gray-700 mb-1 text-center lg:pl-10 text-sm lg:text-base">Horarios de desayuno: L-V
+                de 8am a 12pm y S-D de
+                8am a 2pm
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-64 gap-y-4 px-4 border-b-4 border-[#095430] pb-6 py-6">
+                <!-- Bloque individual con dos líneas superiores -->
+                <div class="relative p-4 border-[#095430]">
+                    <!-- Primera línea superior -->
+                    <div class="absolute top-0 left-0 w-full border-t-2 border-[#095430]"></div>
+                    <!-- Segunda línea superior -->
+                    <div class="absolute top-3 left-0 w-full border-t-2 border-[#095430]"></div>
 
-    <!-- Cuerpo de la página -->
-    <div class="flex flex-wrap justify-center items-center pt-52 bg-custom-brown-light">
-        <a href="#bebidasCalientes" class="relative m-8">
-            <img src="imagenes/bebidaCaliente.jpg" alt="" class="rounded-lg w-72 h-72 transform hover:scale-110">
-            <div
-                class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 text-white text-2xl font-bold transform hover:scale-110">
-                <span>Bebidas Calientes</span>
-            </div>
-        </a>
-
-        <a href="#bebidasFrias" class="relative m-8">
-            <img src="imagenes/frappeChoco.jpg" alt="" class="rounded-lg w-72 h-72 transform hover:scale-110">
-            <div
-                class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 text-white text-2xl font-bold transform hover:scale-110">
-                <span>Bebidas Frías</span>
-            </div>
-        </a>
-
-        <a href="#alimentos" class="relative m-8">
-            <img src="imagenes/mollete.jpg" alt="" class="rounded-lg w-72 h-72 transform hover:scale-110">
-            <div
-                class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 text-white text-2xl font-bold transform hover:scale-110">
-                <span>Alimentos</span>
-            </div>
-        </a>
-
-        <a href="#postres" class="relative m-8">
-            <img src="imagenes/Pastel.jpg" alt="" class="rounded-lg w-72 h-72 transform hover:scale-110">
-            <div
-                class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 text-white text-2xl font-bold transform hover:scale-110">
-                <span>Postres</span>
-            </div>
-        </a>
-    </div>
-
-
-    <!-- ENLACE PARA BEBIDAS CALIENTES -->
-    <div id="bebidasCalientes" class="pt-28"></div>
-
-
-
-    <!-- BEBIDAS CALIENTES -->
-
-    <div class="bg-custom-brownmt-20">
-        <div class="container mx-auto py-12">
-            <h1 class="text-4xl font-bold mb-6 text-center text-custom-brown">Bebidas Calientes</h1>
-
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div class="bg-white p-4 rounded-md shadow-md flex items-center justify-between">
-                    <h2 class="text-lg font-bold mb-2 mr-4">Espresso</h2>
-                    <p class="text-lg font-bold text-gray-500">$18</p>
-                </div>
-                <div class="bg-white p-4 rounded-md shadow-md flex items-center justify-between">
-                    <h2 class="text-lg font-bold mb-2">Americano</h2>
-                    <p class="text-lg font-bold text-gray-500">$20</p>
-                </div>
-                <div class="bg-white p-4 rounded-md shadow-md flex items-center justify-between">
-                    <h2 class="text-lg font-bold mb-2">Latte</h2>
-                    <p class="text-lg font-bold text-gray-500">$25</p>
-                </div>
-                <div class="bg-white p-4 rounded-md shadow-md  items-center ">
-                    <div class=" flex items-center justify-between">
-                        <h2 class="text-lg font-bold mb-2">Cappuccino</h2>
-                        <p class="text-lg font-bold text-gray-500">$25</p>
-                    </div>
-
-                    <div class="flex items-center justify-between mb-4">
-                        <h2 class="text-lg font-bold">Cappuccino de Sabor</h2>
-                        <p class="text-lg font-bold text-gray-500">$35</p>
-                    </div>
-
-                    <ul class="list-disc pl-6 mt-2">
-                        <li>Chocolate</li>
-                        <li>Amareto</li>
-                        <li>Vainilla</li>
-                        <li>Caramelo</li>
-                        <li>Pumpkinspice</li>
-                        <li>Avellana</li>
-                    </ul>
+                    <h2 class="font-tittle text-xl mt-4 relative">
+                        HUEVOS AL GUSTO
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(A la Mexicana, Jamón, Salchicha,
+                        Tocino, Chorizo, Divorciados, Machacados, todos van acompañados con frijoles y
+                        tortillas)
+                    </p>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">MOLLETES SENCILLOS
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(Acompañado con pico de gallo)
+                    </p>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">MOLLETES PREPARADOS
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(Tocino, Jamón, Chorizo.
+                        Acompañados con pico de gallo)
+                    </p>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">WAFFLES
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(Acompañado con fruta y a escoger:
+                        Lechera, Mermelada de fresa, Chocolate o miel)
+                    </p>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">WAFFLES CON HELADO
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(Acompañado con fruta y a escoger:
+                        Lechera, Mermelada de fresa, Chocolate o miel)
+                    </p>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">OMELETTE
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(Jamón con queso, Champiñones con
+                        queso, Espinacas con queso, calabaza con zanahoria. Acompañados con frijoles)
+                    </p>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">CLUB SÁNDWICH
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(Jamón, pollo, Atún) Sándwich de
+                        doble piso con queso, jitomate,
+                        cebolla y lechuga. (Acompañado con papas)
+                    </p>
                 </div>
 
+                <!-- Repite para cada elemento -->
+                <div class="relative p-4 border-[#095430]">
+                    <div class="absolute top-0 left-0 w-full border-t-2 border-[#095430]"></div>
+                    <div class="absolute top-3 left-0 w-full border-t-2 border-[#095430]"></div>
 
-                <div class="bg-white p-4 rounded-md shadow-md  items-center ">
-                    <div class="flex items-center justify-between mb-4">
-                        <h2 class="text-lg font-bold">Té chaí latte</h2>
-                        <p class="text-lg font-bold text-gray-500">$35</p>
-                    </div>
-
-                    <ul class="list-disc pl-6 mt-2">
-                        <li>Manzanilla</li>
-                        <li id="bebidasFrias">Limón</li>
-                    </ul>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">CHILAQUILES SENCILLOS
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">Rojos o verdes (Pollo deshebrado o
+                        huevo, queso, crema y cebolla)
+                    </p>
+                    <h2 class="lg:text-xl font-semibold font-tittle mt-4 flex justify-between items-center">CHILAQUILES
+                        CON
+                        PROTEINA
+                        <span class="text-[#095430] ">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">Rojos o verdes (Pechuga de pollo o
+                        Bistec, queso, crema y cebolla)
+                    </p>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">ENCHILADAS SENCILLAS
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">Rojos o verdes (Pechuga de pollo o
+                        Bistec, queso, crema y cebolla)
+                    </p>
+                    <h2 class="lg:text-xl font-semibold font-tittle mt-4 flex justify-between items-center">ENCHILADAS
+                        CON PROTEINA
+                        <span class="text-[#095430] ">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">Rojos o verdes (Pechuga de pollo o
+                        Bistec, queso, crema y cebolla)
+                    </p>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">BAGUETTE
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(jamón con queso, pechuga de
+                        pollo, atún, bistec, estilo mexicana, pizza. Acompañados con su respectivo aderezo y
+                        verdura)
+                    </p>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">CUERNITO
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(Jamón, queso amarillo, lechuga,
+                        jitomate, rajas, cebolla y queso crema)
+                    </p>
+                    </p>
                 </div>
             </div>
+        </section>
 
-        </div>
-
-        <!-- BEBIDAS FRIAS -->
-
-        <div class="container mx-auto py-12">
-            <h1 class="text-4xl font-bold mb-6 text-center text-custom-brown">Bebidas Frías</h1>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div id="bebidasFrias" class="bg-white p-4 rounded-md shadow-md  items-center ">
-                    <div class="flex items-center justify-between mb-4">
-                        <h2 class="text-lg font-bold mb-2">Sodas Italiana</h2>
-                        <p class="text-lg font-bold text-gray-500">$30</p>
-                    </div>
-                    <ul class="list-disc pl-6 mt-2">
-                        <li>Mango</li>
-                        <li>Mandarina</li>
-                        <li>Bluberry</li>
-                        <li>Granada</li>
-                        <li>Manzana Verde</li>
-                        <li>Frutos Rojos</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-4 rounded-md shadow-md  items-center ">
-                    <div class="flex items-center justify-between mb-4">
-                        <h2 class="text-lg font-bold mb-2">Frappes - Con leche</h2>
-                        <p class="text-lg font-bold text-gray-500">$50</p>
-                    </div>
-                    <ul class="list-disc pl-6 mt-2">
-                        <li>Frapuccino</li>
-                        <li>Chocolate</li>
-                        <li>Vainilla</li>
-                        <li>Matcha</li>
-                        <li>Caramelo</li>
-                        <li>Moka</li>
-                        <li>Oreo</li>
-
-                    </ul>
-                </div>
-
-                <div class="bg-white p-4 rounded-md shadow-md  items-center ">
-                    <div class="flex items-center justify-between mb-4">
-                        <h2 class="text-lg font-bold mb-2">Frappes - Con agua</h2>
-                        <p class="text-lg font-bold text-gray-500">$50</p>
-                    </div>
-                    <ul class="list-disc pl-6 mt-2">
-                        <li>Horchata</li>
-                        <li>Piña colada</li>
-                        <li>Mango</li>
-                        <li>Fresa</li>
-
-                    </ul>
-                </div>
-                <div class="bg-white p-4 rounded-md shadow-md  items-center ">
-                    <div class="flex items-center justify-between mb-4">
-                        <h2 id="alimentos" class="text-lg font-bold mb-2">Chamoyada</h2>
-                        <p class="text-lg font-bold text-gray-500">$60</p>
-                    </div>
-                    <ul class="list-disc pl-6 mt-2">
-                        <li>Mango</li>
-                        <li>Fresa</li>
-
-                    </ul>
-                </div>
-                <!-- Agrega más elementos con el mismo formato -->
-            </div>
-        </div>
-        <!-- ALIMENTOS -->
-        <div class="container mx-auto py-12">
-            <h1 class="text-4xl font-bold mb-6 text-center text-custom-brown">Alimentos</h1>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div class="bg-white p-4 rounded-md shadow-md flex items-center justify-between">
-                    <h2 class="text-lg font-bold mb-2">Waffles</h2>
-                    <p class="text-lg font-bold text-gray-500">$30</p>
-                </div>
-                <div class="bg-white p-4 rounded-md shadow-md flex items-center justify-between">
-                    <h2 class="text-lg font-bold mb-2">Chilaquiles</h2>
-                    <p class="text-lg font-bold text-gray-500">$35</p>
-                </div>
-                <div class="bg-white p-4 rounded-md shadow-md flex items-center justify-between">
-                    <h2 class="text-lg font-bold mb-2">Sincronizada</h2>
-                    <p class="text-lg font-bold text-gray-500">$20</p>
-                </div>
-                <div class="bg-white p-4 rounded-md shadow-md flex items-center justify-between">
-                    <h2 class="text-lg font-bold mb-2">Sincronizada con chorizo</h2>
-                    <p class="text-lg font-bold text-gray-500">$28</p>
-                </div>
-                <div class="bg-white p-4 rounded-md shadow-md flex items-center justify-between">
-                    <h2 class="text-lg font-bold mb-2">Hot dogs (2 piezas)</h2>
-                    <p class="text-lg font-bold text-gray-500">$30</p>
-                </div>
-                <div class="bg-white p-4 rounded-md shadow-md flex items-center justify-between">
-                    <h2 class="text-lg font-bold mb-2">Hot dogs c/queso (2 piezas)</h2>
-                    <p class="text-lg font-bold text-gray-500">$30</p>
-                </div>
-                <div class="bg-white p-4 rounded-md shadow-md flex items-center justify-between">
-                    <h2 class="text-lg font-bold mb-2">Sandwich's</h2>
-                    <ul class="list-disc pl-6 mt-2">
-                        <li>Jamón <span class="text-lg font-bold text-gray-500">$23</span></li>
-                        <li>Salchicha <span class="text-lg font-bold text-gray-500">$23</span></li>
-                        <li>Pollo <span class="text-lg font-bold text-gray-500">$28</span></li>
-                        <li>Atún <span class="text-lg font-bold text-gray-500">$28</span></li>
-                    </ul>
-                </div>
-                <div class="bg-white p-4 rounded-md shadow-md flex items-center justify-between">
-                    <h2 class="text-lg font-bold mb-2">Molletes (2 piezas)</h2>
-                    <ul class="list-disc pl-6 mt-2">
-                        <li>Sencillos <span class="text-lg font-bold text-gray-500">$30</span></li>
-                        <li>Jamón <span class="text-lg font-bold text-gray-500">$40</span></li>
-                        <li>Chorizo <span class="text-lg font-bold text-gray-500">$40</span></li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="container mx-auto py-12">
-            <h1 class="text-4xl font-bold mb-6 text-center text-custom-brown">Postres</h1>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div class="bg-white p-4 rounded-md shadow-md flex items-center justify-between">
-                    <h2 class="text-lg font-bold mb-2">Pastel de chocolate</h2>
-                    <p class="text-lg font-bold text-gray-500">$30</p>
-                </div>
-                <div class="bg-white p-4 rounded-md shadow-md flex items-center justify-between">
-                    <h2 class="text-lg font-bold mb-2">Pay de limóm</h2>
-                    <p class="text-lg font-bold text-gray-500">$35</p>
-                </div>
-                <div id="postres" class="bg-white p-4 rounded-md shadow-md flex items-center justify-between">
-                    <h2 class="text-lg font-bold mb-2">Panque de platano</h2>
-                    <p class="text-lg font-bold text-gray-500">$20</p>
-                </div>
-            </div>
-
-            <a href="https://www.google.com.mx/maps/place/La+Suerte+Cafe/@19.4842602,-99.0989333,17z/data=!3m1!4b1!4m6!3m5!1s0x85d1fbde5a74b379:0x29057d5c9a028c5e!8m2!3d19.4842602!4d-99.0963584!16s%2Fg%2F11h_2nvkhg?entry=ttu"
-                target="_blank">
-                <div class="text-center mt-14 transform hover:scale-110 font-medium text-lg">
-                    <div class="flex justify-center items-center "><img src="imagenes/locationCafe.png" alt=""
-                            class="w-56">
-                    </div>
-                    <p>Félix Romero #186</p>
-                    <p>Col.Constitución de la República</p>
+        <!-- IMAGENES -->
+        <!-- IMAGENES -->
+        <!-- IMAGENES -->
+        <!-- IMAGENES -->
+        <!-- IMAGENES -->
+        <!-- IMAGENES -->
+        <div class="flex overflow-x-auto whitespace-nowrap justify-center items-center pt-4 bg-custom-brown-">
+            <a href="#bebidasCalientes" class="inline-block relative mx-4 border border-[blue]">
+                <img src="imagenes/bebidaCaliente.jpg" alt=""
+                    class="rounded-lg lg:w-72 lg:h-72 h-20 w-20 transform hover:scale-110">
+                <div
+                    class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 lg:text-2xl text-xs font-bold transform hover:scale-110  overflow-hidden border border-[red] break-words">
+                    <span class="text-center break-words ">Bebidas Calientes</span>
                 </div>
             </a>
 
+            <a href="#bebidasFrias" class="inline-block relative mx-4 border border-[blue]">
+                <img src="imagenes/frappeChoco.jpg" alt=""
+                    class="rounded-lg lg:w-72 lg:h-72 h-20 w-20 transform hover:scale-110">
+                <div
+                    class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 text-black lg:text-2xl text-xs font-bold transform hover:scale-110  overflow-hidden">
+                    <span class="block text-center px-2 break-words">Bebidas Frías</span>
+                </div>
+            </a>
 
+            <a href="#alimentos" class="inline-block relative mx-4 border border-[blue]">
+                <img src="imagenes/mollete.jpg" alt=""
+                    class="rounded-lg lg:w-72 lg:h-72 h-20 w-20 transform hover:scale-110">
+                <div
+                    class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 text-white lg:text-2xl text-xs font-bold transform hover:scale-110  overflow-hidden">
+                    <span>Alimentos</span>
+                </div>
+            </a>
 
-
-
-
-
-
+            <a href="#postres" class="inline-block relative mx-4 border border-[blue]">
+                <img src="imagenes/Pastel.jpg" alt=""
+                    class="rounded-lg lg:w-72 lg:h-72 h-20 w-20 transform hover:scale-110">
+                <div
+                    class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 text-white lg:text-2xl text-xs font-bold transform hover:scale-110  overflow-hidden">
+                    <span>Postres</span>
+                </div>
+            </a>
+            <!-- ENLACE PARA BEBIDAS CALIENTES -->
+            <div id="bebidasCalientes" class="pt-28"></div>
         </div>
+
+
+        <!--                    -->
+        <!--                    -->
+        <!-- BEBIDAS CALIENTES -->
+        <!--                    -->
+        <!--                    -->
+
+        <section class="container mx-auto py-6">
+            <h1 class="lg:text-8xl font-tittle pl-10 text-center text-[#095430] border-[#095430] border-t-4 pt-6 pb-9">
+                BEBIDAS CALIENTES</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-64 gap-y-4 px-4 border-b-4 border-[#095430] pb-6">
+                <!-- Bloque individual con dos líneas superiores -->
+                <div class="relative p-4 border-[#095430]">
+                    <!-- Primera línea superior -->
+                    <div class="absolute top-0 left-0 w-full border-t-2 border-[#095430]"></div>
+                    <!-- Segunda línea superior -->
+                    <div class="absolute top-3 left-0 w-full border-t-2 border-[#095430]"></div>
+
+                    <h2 class="font-tittle text-xl mt-4 relative">
+                        TE’S
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(Limón, Manzanilla, Hierbabuena)
+                    </p>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">TE CHAI LATTE
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">
+                    </p>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">AMERICANO
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                        <p class="font-text text-gray-700 border-b border-[#095430] pb-2">
+                        </p>
+                    </h2>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">CHOCOLATE
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                        <p class="font-text text-gray-700 border-b border-[#095430] pb-2">
+                        </p>
+                    </h2>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">CAPUCCINO
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                        <p class="font-text text-gray-700 border-b border-[#095430] pb-2">
+                        </p>
+                    </h2>
+                </div>
+
+                <!-- Repite para cada elemento -->
+                <div class="relative p-4 border-[#095430]">
+                    <div class="absolute top-0 left-0 w-full border-t-2 border-[#095430]"></div>
+                    <div class="absolute top-3 left-0 w-full border-t-2 border-[#095430]"></div>
+
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">LATTE
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">
+                    </p>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">MOKA
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">
+                    </p>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">CAPUCCINO DE SABOR
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2" id="bebidasFrias">(Vainilla,
+                        Chocolate, Caramelo,
+                        Almendra, Amaretto, Avellana)
+                    </p>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">LECHE DESLACTOSADA O LIGHT
+                        <span class="text-[#095430] absolute right-0">+$10</span>
+                        <p class="font-text text-gray-700 border-b border-[#095430] pb-2">
+                        </p>
+                    </h2>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">ALMENDRA O VEGETAL
+                        <span class="text-[#095430] absolute right-0">+$20</span>
+                        <p class="font-text text-gray-700 border-b border-[#095430] pb-2">
+                        </p>
+                    </h2>
+                </div>
+        </section>
+
+
+        <!--                    -->
+        <!--                    -->
+        <!-- BEBIDAS FRIAS -->
+        <!--                    -->
+        <!--                    -->
+
+        <section class=" container mx-auto py-6">
+            <h1 class="lg:text-8xl font-tittle pl-10 text-center text-[#095430] border-[#095430] border-t-4 pt-6 pb-9">
+                BEBIDAS FRIAS</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-64 gap-y-4 px-4 border-b-4 border-[#095430] pb-6">
+                <!-- Bloque individual con dos líneas superiores -->
+                <div class="relative p-4 border-[#095430]">
+                    <!-- Primera línea superior -->
+                    <div class="absolute top-0 left-0 w-full border-t-2 border-[#095430]"></div>
+                    <!-- Segunda línea superior -->
+                    <div class="absolute top-3 left-0 w-full border-t-2 border-[#095430]"></div>
+
+                    <h2 class="font-tittle text-xl mt-4 relative">
+                        SODA ITALIANA
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(Blueberry, Mandarina,
+                        Mango, Granada,
+                        Manzana Verde, Frutos Roios)
+                    </p>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">FRAPPES A BASE DE AGUA
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(Horchata, Piña
+                        Colada, Mango,
+                        Fresa)
+                    </p>
+                </div>
+
+                <!-- Repite para cada elemento -->
+                <div class="relative p-4 border-[#095430]">
+                    <div class="absolute top-0 left-0 w-full border-t-2 border-[#095430]"></div>
+                    <div class="absolute top-3 left-0 w-full border-t-2 border-[#095430]"></div>
+
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">CHAMOYADA
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(fresa o mango)
+                    </p>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">FRAPPES A BASE DE LECHE
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2" id="postres">(Frappuccino,
+                        Chocolate, Vainilla,
+                        Caramelo, Matcha, Taro, Moka, Oreo, Amaretto)
+                    </p>
+                </div>
+        </section>
+
+        <!--                    -->
+        <!--                    -->
+        <!--      ALIMENTOS     -->
+        <!--                    -->
+        <!--                    -->
+        <section class="container mx-auto py-6">
+            <h1 class="lg:text-8xl font-tittle pl-10 text-center text-[#095430] border-[#095430] border-t-4 pt-6 pb-9">
+                ALIMENTOS</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-64 gap-y-4 px-4 border-b-4 border-[#095430] pb-6">
+                <!-- Bloque individual con dos líneas superiores -->
+                <div class="relative p-4 border-[#095430]">
+                    <!-- Primera línea superior -->
+                    <div class="absolute top-0 left-0 w-full border-t-2 border-[#095430]"></div>
+                    <!-- Segunda línea superior -->
+                    <div class="absolute top-3 left-0 w-full border-t-2 border-[#095430]"></div>
+
+                    <h2 class="font-tittle text-xl mt-4 relative">
+                        WAFFLES
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">Platano (Lechera, miel, chocolate)
+                    </p>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">WAFFLES CON HELADO
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                        <p class="font-text text-gray-700 border-b border-[#095430] pb-2">Platano (Lechera, miel,
+                            chocolate)
+                        </p>
+                    </h2>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">CHILAQUILES
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                        <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(pollo, crema y queso)
+                        </p>
+                    </h2>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">ENCHILADAS
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                        <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(pollo, crema y queso)
+                        </p>
+                    </h2>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">HOT DOGS
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                        <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(pico de gallo, mostaza,
+                            ketchup y mayonesa)
+                        </p>
+                    </h2>
+                    <h2 class="text-xl font-semibold font-tittle mt-4 relative">HOT DOGS CON QUESO
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                        <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(pico de gallo, mostaza,
+                            ketchup y mayonesa)
+                        </p>
+                    </h2>
+                    <h2 class="font-tittle text-xl mt-4 relative">
+                        CUERNITO
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(Jamón, queso amarillo, lechuga,
+                        jitomate, rajas, cebolla y queso crema)
+                    </p>
+                </div>
+
+                <!-- Repite para cada elemento -->
+                <div class="relative p-4 border-[#095430]">
+                    <div class="absolute top-0 left-0 w-full border-t-2 border-[#095430]"></div>
+                    <div class="absolute top-3 left-0 w-full border-t-2 border-[#095430]"></div>
+
+                    <h2 class="font-tittle text-xl mt-4 relative">
+                        MOLLETES
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(pico de gallo)
+                    </p>
+                    <h2 class="font-tittle text-xl mt-4 relative">
+                        MOLLETES PREPARADOS
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(Jamón, chorizo, tocino)
+                    </p>
+                    <h2 class="font-tittle text-xl mt-4 relative">
+                        SINCRONIZADA
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(Jamón y queso)
+                    </p>
+                    <h2 class="font-tittle text-xl mt-4 relative">
+                        SINCRONIZADA CON CHORIZO
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(Chorizo y queso)
+                    </p>
+                    <h2 class="font-tittle text-xl mt-4 relative">
+                        SANDWICH SENCILLO
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(De jamón o de salchicha) si
+                        gustas agregar quesillo cuesta $10 mas.
+                    </p>
+                    <h2 class="font-tittle text-xl mt-4 relative">
+                        SANDWICH PROTEINA
+                        <span class="text-[#095430] absolute right-0">$250</span>
+                    </h2>
+                    <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(De pollo deshebrado, pechuga de
+                        pollo, atun)
+                        si gustas agregar quesillo cuesta $10 mas.
+                    </p>
+                </div>
+        </section>
+
+        <!--                    -->
+        <!--                    -->
+        <!-- POSTRES Y BEBIDAS -->
+        <!--                    -->
+        <!--                    -->
+
+        <section class="flex flex-wrap space-x-4 mx-4 sm:mx-8 lg:mx-16 overflow-hidden">
+            <div class="flex-1 p-4">
+                <h1
+                    class="lg:text-8xl font-tittle pl-10 text-center text-[#095430] border-[#095430] border-t-4 pt-6 pb-9">
+                    POSTRES</h1>
+                <div class="grid grid-cols-1 gap-x-64 gap-y-4 px-4 pb-6">
+                    <!-- Bloque individual con dos líneas superiores -->
+                    <div class="relative p-4 border-[#095430]">
+                        <!-- Primera línea superior -->
+                        <div class="absolute top-0 left-0 w-full border-t-2 border-[#095430]"></div>
+                        <!-- Segunda línea superior -->
+                        <div class="absolute top-3 left-0 w-full border-t-2 border-[#095430]"></div>
+
+                        <h2 class="font-tittle text-xl mt-4 relative border-b border-[#095430] pb-2">
+                            PAY DE LIMON
+                            <span class="text-[#095430] absolute right-0">$250</span>
+                        </h2>
+                        <h2 class="text-xl font-semibold font-tittle mt-4 relative border-b border-[#095430] pb-2">
+                            PANQUE DE ELOTE
+                            <span class="text-[#095430] absolute right-0">$250</span>
+                        </h2>
+                        <h2 class="text-xl font-semibold font-tittle mt-4 relative border-b border-[#095430] pb-2">
+                            PANQUE DE PLATANO
+                            <span class="text-[#095430] absolute right-0">$250</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <!-- Block right -->
+            <!-- Block right -->
+            <!-- Block right -->
+            <!-- Block right -->
+            <div class="flex-1 p-4">
+                <h1
+                    class="lg:text-8xl font-tittle pl-10 text-center text-[#095430] border-[#095430] border-t-4 pt-6 pb-9">
+                    BEBIDAS</h1>
+                <!-- Repite para cada elemento -->
+                <div class="grid grid-cols-1 gap-x-64 gap-y-4 px-4 pb-6">
+                    <!-- Bloque individual con dos líneas superiores -->
+                    <div class="relative p-4 border-[#095430]">
+                        <!-- Primera línea superior -->
+                        <div class="absolute top-0 left-0 w-full border-t-2 border-[#095430]"></div>
+                        <!-- Segunda línea superior -->
+                        <div class="absolute top-3 left-0 w-full border-t-2 border-[#095430]"></div>
+
+                        <h2 class="text-xl font-semibold font-tittle mt-4 relative border-b border-[#095430] pb-2"> JUGO
+                            DE NARANJA
+                            <span class="text-[#095430] absolute right-0">$250</span>
+                        </h2>
+                        <h2 class="text-xl font-semibold font-tittle mt-4 relative border-b border-[#095430] pb-2">
+                            NARANJADA O LIMONADA
+                            <span class="text-[#095430] absolute right-0" id="alimentos">$250</span>
+                        </h2>
+                        <h2 class="font-tittle text-xl mt-4 relative">
+                            LICUADOS
+                            <span class="text-[#095430] absolute right-0">$250</span>
+                        </h2>
+                        <p class="font-text text-gray-700 border-b border-[#095430] pb-2">(avena, platano, fresa,
+                            manzana, papaya)
+                        </p>
+                    </div>
+                </div>
+        </section>
+
+        <!-- UBICACION Y FOOTER -->
+        <!-- UBICACION Y FOOTER -->
+        <!-- UBICACION Y FOOTER -->
+        <a href="https://www.google.com.mx/maps/place/La+Suerte+Cafe/@19.4842602,-99.0989333,17z/data=!3m1!4b1!4m6!3m5!1s0x85d1fbde5a74b379:0x29057d5c9a028c5e!8m2!3d19.4842602!4d-99.0963584!16s%2Fg%2F11h_2nvkhg?entry=ttu"
+            target="_blank">
+            <div class="text-center mt-14 transform hover:scale-110 font-medium text-lg">
+                <div class="flex justify-center items-center "><img src="imagenes/locationCafe.png" alt="" class="w-56">
+                </div>
+                <p>Félix Romero #186</p>
+                <p>Col.Constitución de la República</p>
+            </div>
+        </a>
+    </main>
 </body>
 
 </html>
